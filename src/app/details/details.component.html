@@ -1,0 +1,26 @@
+<div class="container">
+
+<h2>Details for Client {{user.name.firstname + " " + user.name.lastname}}</h2>
+<hr>
+
+<h3>ID : {{user.id}}</h3>
+<h3>Email : {{user.email}}</h3>
+<h3>Username : {{user.username}}</h3>
+<h3>Password : {{user.password}}</h3>
+<h3>Phone Number : {{user.phone}}</h3>
+
+
+
+
+<p>Geo-Location Address :  </p>
+<p>Lat : {{user.address.geolocation.lat}}</p>
+<p>Long : {{user.address.geolocation.long}}</p>
+
+<p>City : {{user.address.city}}</p>
+<p>Street : {{user.address.street}}</p>
+<p>Number : {{user.address.number}}</p>
+<p>ZipCode : {{user.address.zipcode}}</p>
+
+
+<a routerLink="/table" class="btn btn-danger">Go Back</a>
+</div>
